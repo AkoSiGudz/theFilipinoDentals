@@ -8,7 +8,7 @@ body {
 
 
 header {
-    background: linear-gradient(to right, #eff0f1, #012461); /* Gradient from light blue to dark blue #466CAD*/
+    background: linear-gradient(to right, #eff0f1, blue); /* Gradient from light blue to dark blue #466CAD*/
     padding: 20px 0; /* Increased padding for a more prominent effect */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow to create depth  jj */
     position: relative; /* To position elements absolutely inside it */
