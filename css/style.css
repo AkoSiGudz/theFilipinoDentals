@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    padding-bottom: 70px; 
 }
 
 
@@ -155,6 +156,7 @@ nav ul li a {
 }
 
 .services-container {
+    height: 100%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -194,11 +196,16 @@ nav ul li a {
 
 /* Footer */
 footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     text-align: center;
-    padding: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
     background-color: #333;
     color: white;
-    margin-top: 50px;
+    z-index: 1000; /* Ensures the footer stays on top */
 }
 
 /* Responsive adjustments */
@@ -254,10 +261,6 @@ footer {
         width: 120px; /* Resize logo for smaller screens */
     }
 
-    .carousel-item {
-        height: 400px;
-    }
-
     footer {
         padding: 15px; /* Reduce padding for footer */
     }
@@ -289,7 +292,7 @@ footer {
 
 .carousel-item {
     flex: 0 0 100%; /* Ensure each item takes up 100% width of the container */
-    height: 700px; /* Fixed height for the carousel item */
+    height: 70vh; /* Fixed height for the carousel item */
     display: flex;
     align-items: center; /* Center align the image vertically */
     justify-content: center; /* Center align the image horizontally */
