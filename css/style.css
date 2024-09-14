@@ -254,6 +254,10 @@ footer {
         width: 120px; /* Resize logo for smaller screens */
     }
 
+    .carousel-item {
+        height: 400px;
+    }
+
     footer {
         padding: 15px; /* Reduce padding for footer */
     }
