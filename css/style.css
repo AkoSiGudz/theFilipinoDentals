@@ -1,0 +1,166 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: linear-gradient(to right, #eff0f1, #466CAD); /* Gradient from light blue to dark blue */
+    padding: 20px 0; /* Increased padding for a more prominent effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow to create depth */
+    position: relative; /* To position elements absolutely inside it */
+    z-index: 1; /* Ensures the header stays on top */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: white; /* Text color for contrast */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adds shadow to text for depth */
+}
+
+/* Logo style */
+.logo img {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center align the logo */
+}
+
+
+
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Hero Section */
+#hero {
+    background-image: url('../images/FilipinoDental_bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Hero Overlay - Darkens the background */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);  /* Darker semi-transparent overlay */
+    z-index: 1;
+}
+
+/* Hero Text Box with semi-transparent background and shadow */
+.hero-text-box {
+    position: relative;
+    z-index: 2;  /* Keeps the text above the overlay */
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+    padding: 30px;
+    border-radius: 10px;  /* Rounded corners */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);  /* Drop shadow */
+    max-width: 600px;
+    text-align: center;  /* Center the text */
+}
+
+/* Hero Text */
+.hero-text h1 {
+    font-size: 3em;
+    margin: 0 0 20px 0;
+    color: #333;  /* Darker text for contrast */
+}
+
+.hero-text p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-text p {
+        font-size: 1.2em;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 1em;
+    }
+}
+
+
+
+/* Services Section */
+#services {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.service-box {
+    width: 30%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 50px;
+}
