@@ -140,27 +140,56 @@ nav ul li a {
     background-color: #45a049;
 }
 
-/* Services Section */
+/* Services Section Styles */
 #services {
-    padding: 50px 0;
-    background-color: #f4f4f4;
+    padding: 50px 20px;
+    background-color: #f5f5f5;
     text-align: center;
+}
+
+#services h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
 }
 
 .services-container {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap; /* Allows items to wrap onto multiple lines */
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .service-box {
-    width: 30%;
-    background-color: white;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px; /* Space between boxes */
+    width: 500px; /* Adjust as needed */
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.service-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.service-box h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #444;
+}
+
+.service-box p {
+    font-size: 1em;
+    color: #666;
+}
+
 
 /* Footer */
 footer {
@@ -227,4 +256,46 @@ footer {
     footer {
         padding: 15px; /* Reduce padding for footer */
     }
+}
+
+/* Carousel Styles */
+#dentists-carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    padding: 20px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Hide overflow to ensure smooth transitions */
+}
+
+.carousel-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+
+.carousel-item {
+    flex: 0 0 100%; /* Ensure each item takes up 100% width of the container */
+    height: 700px; /* Fixed height for the carousel item */
+    display: flex;
+    align-items: center; /* Center align the image vertically */
+    justify-content: center; /* Center align the image horizontally */
+    overflow: hidden; /* Ensure no overflow outside of the container */
+    padding: 0; /* Remove any padding */
+}
+
+.carousel-item img {
+    height: 100%; /* Fixed height */
+    width: auto; /* Width adjusts to maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the area */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
