@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Automatic scrolling interval
-    const autoScrollInterval = 3000; // Time in milliseconds (e.g., 3000ms = 3 seconds)
+    const autoScrollInterval = 5000; // Time in milliseconds (e.g., 5000ms = 5 seconds)
     setInterval(goToNextItem, autoScrollInterval);
 
     updateCarousel(); // Initialize the carousel

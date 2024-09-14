@@ -259,44 +259,54 @@ footer {
     }
 }
 
-/* Carousel Styles */
-#dentists-carousel {
+/* General styles for the section containing videos and carousel */
+#dentists {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
     position: relative;
-    overflow: hidden;
+}
+
+/* Style for video containers */
+.video-container {
+    flex: 1;
+    max-width: 45%;
+    padding: 10px;
+}
+
+.video-container video {
     width: 100%;
-    max-width: 800px;
-    margin: auto;
-    padding: 20px 0;
-    background-color: #f9f9f9;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Style for content container */
+.content-container {
+    flex: 2;
+    padding: 10px;
     text-align: center;
 }
 
+/* Style for the carousel container */
 .carousel-container {
     position: relative;
-    width: 100%;
-    overflow: hidden; /* Hide overflow to ensure smooth transitions */
 }
 
 .carousel-wrapper {
     display: flex;
-    transition: transform 0.5s ease;
-    width: 100%;
+    overflow-x: auto;
+    scroll-behavior: smooth;
 }
 
 .carousel-item {
-    flex: 0 0 100%; /* Ensure each item takes up 100% width of the container */
-    height: 700px; /* Fixed height for the carousel item */
-    display: flex;
-    align-items: center; /* Center align the image vertically */
-    justify-content: center; /* Center align the image horizontally */
-    overflow: hidden; /* Ensure no overflow outside of the container */
-    padding: 0; /* Remove any padding */
+    flex: 0 0 auto;
+    margin: 0 10px;
 }
 
 .carousel-item img {
-    height: 100%; /* Fixed height */
-    width: auto; /* Width adjusts to maintain aspect ratio */
-    object-fit: cover; /* Ensure the image covers the area */
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
