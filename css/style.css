@@ -59,15 +59,36 @@ nav ul li a {
 /* Hero Section */
 #hero {
     background-image: url('../images/FilipinoDental_bg.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 80vh;
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Keeps the center of the image visible */
+    background-repeat: no-repeat; /* Prevents image repetition */
+    height: 80vh; /* Sets the height to 80% of the viewport height */
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
 }
+
+/* Adjust hero text for smaller screens */
+@media (max-width: 768px) {
+    #hero {
+        height: 60vh; /* Adjust the height for smaller screens if needed */
+    }
+
+    .hero-text-box {
+        padding: 20px; /* Reduce padding for smaller screens */
+        max-width: 90%; /* Adjust max width for smaller screens */
+    }
+
+    .hero-text h1 {
+        font-size: 2em; /* Adjust font size for smaller screens */
+    }
+
+    .hero-text p {
+        font-size: 1.2em; /* Adjust font size for smaller screens */
+    }
+}
+
 
 /* Hero Overlay - Darkens the background */
 .hero-overlay {
